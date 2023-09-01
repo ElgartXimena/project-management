@@ -1,0 +1,90 @@
+.login-page {
+    background: url(../../../../../assets/images/login-bg.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .header {
+    padding: 110px 0;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  
+  mat-card {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(114, 111, 111, 0.26); 
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: fit-content;
+    margin-top: 40%;
+  }
+  
+  mat-form-field, mat-checkbox {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  mat-card-content {
+    padding: 20px;
+  }
+  
+  .login-button {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px; 
+    display: block; 
+  }
+  
+   mat-error {
+    margin-top: 4px;
+    font-size: 12px; 
+    color: red;
+    display: block; 
+  }
+  
+  .username-input, .password-input {
+    position: relative;
+  }
+  
+ mat-icon {
+    
+    color: #a19e9e;
+ 
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+//desktop
+@media only screen and (min-width: 768px) {
+  .login-page{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+  mat-card{
+    margin-top: 0;
+  }
+}

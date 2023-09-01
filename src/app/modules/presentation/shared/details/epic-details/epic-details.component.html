@@ -1,0 +1,28 @@
+<mat-expansion-panel class="custom-extension-panel" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  <mat-expansion-panel-header>
+    <div class="header">
+      <div class="icon-container" *ngIf="item.icon">
+        <img src= "../../../../../../../assets/emojis/icons8-{{item.icon}}-48.png" alt="Icon"  width="28" height="28">
+      </div>
+      <div class="content">
+        <mat-panel-title>{{ item.name }}</mat-panel-title>
+        <mat-panel-description *ngIf="item.description">
+          {{ item.description }}
+        </mat-panel-description>
+      </div>
+    </div>
+  </mat-expansion-panel-header>
+
+  <mat-divider></mat-divider>
+  
+  <ul>
+      <li *ngIf="item.project">
+         Project: {{projectName}}
+      </li>
+  </ul>
+
+
+  
+</mat-expansion-panel>
+
+

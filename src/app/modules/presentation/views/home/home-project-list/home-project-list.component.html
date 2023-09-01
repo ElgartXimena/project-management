@@ -1,0 +1,9 @@
+<section>
+    <ul class="project-list">
+        <li *ngFor="let project of projects" class="project-item">
+            <app-home-project-card [project]="project"></app-home-project-card>
+        </li>
+    </ul>
+
+    <app-no-items-card *ngIf="projects!=undefined && projects.length === 0"></app-no-items-card>
+</section>

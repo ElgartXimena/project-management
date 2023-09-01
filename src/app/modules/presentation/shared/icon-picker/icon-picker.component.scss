@@ -1,0 +1,19 @@
+.button-icon-select {
+    box-shadow: none !important;
+}
+
+.icon-menu {
+    padding: 0 !important; 
+  }
+
+  .icon-grid-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }

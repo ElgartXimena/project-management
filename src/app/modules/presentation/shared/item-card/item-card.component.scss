@@ -1,0 +1,30 @@
+.list-item {
+  transition: box-shadow 0.3s ease, transform 0.1s ease;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  &:hover {
+    box-shadow: 2px 2px 4px rgb(63, 81, 181);
+  }
+}
+
+.item-header {
+  margin-bottom: 0.8rem;
+}
+
+.item-content:last-child{
+  padding-bottom: 2px;
+}
+
+.item-mat-actions{
+  mat-icon{
+    margin-right: 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+

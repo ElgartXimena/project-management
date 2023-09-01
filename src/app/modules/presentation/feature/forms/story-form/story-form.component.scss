@@ -1,0 +1,30 @@
+.inline-fields {
+  display: flex;
+  align-items: center;
+
+  // Espaciado entre los campos en linea
+  > * {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.status-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.mat-form-field-inline-points {
+  max-width: 30%;
+}
+
+.mat-form-field-data {  //Date
+  flex: 1;
+  min-width: 30%;
+}

@@ -1,0 +1,38 @@
+mat-sidenav-container {
+  height: 100vh; // Asegura que la sidenav ocupe toda la altura visible
+  padding-top: 4rem;
+ 
+}
+
+mat-sidenav {
+  padding-top: 4rem;
+  width: 100%; 
+  display: flex;
+  
+}
+
+
+app-user-settings-footer {
+  min-width: 100%;
+  position: fixed; // User settings at the bottom are fixed
+  bottom: 0;
+}
+
+//estilos del main content
+mat-sidenav-content {
+  margin: 10%;
+  margin-top: 1rem;
+}
+
+::-webkit-scrollbar {display: none;}
+
+//desktop
+@media only screen and (min-width: 768px) {
+  mat-sidenav {
+    width: 30%;
+  }
+
+  app-user-settings-footer {
+    min-width: 30%;
+  }
+}

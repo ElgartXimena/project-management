@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body{
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// breadcrums light theme
+.xng-breadcrumb-root {
+
+  padding: 0px 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+
+  .xng-breadcrumb-separator {
+    color: rgba(255, 255, 255, 0.9);
+
+  }
+  
+  .xng-breadcrumb-trail {
+    background-color:rgb(255, 133, 52) ;
+    padding: 4px 16px;
+    border-radius: 16px;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.404);
+
+  }
+  
+  .xng-breadcrumb-item{
+    padding: 4px 10px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+}
+
+
+// expansion panel: project - story - epic
+.custom-extension-panel {
+
+  mat-expansion-panel-header  {
+    padding: 16px 24px;
+   }
+
+  mat-panel-title{
+    font-size: 18px;
+  }
+  
+  mat-chip {
+    font-size: 14px;
+    margin: 2px;
+    height: 30px;
+  }
+
+    .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-size: 16px;
+
+    .icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgba(228, 228, 228, 0.267);
+
+      .icon {
+        font-size: 24px;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+
+  }
+
+  mat-divider {
+    padding: 8px 24px;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    
+    li {
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+
+
+}
+
+
+//forms: project -story - epic - task
+
+.form-container{
+  mat-form-field{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+ 
+  .icon-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .icon-picker {
+      margin-left: 10px; 
+    }
+
+
+    mat-error, mat-hint{
+      font-size: 12px;
+      letter-spacing: normal;
+      font-family: sans-serif;
+    }
+
+    .mat-form-field-data {  //Date
+      flex: 1;
+      max-width: 180px;
+    }
+}
+
+.mat-drawer-inner-container::-webkit-scrollbar {
+  display: none;
+}

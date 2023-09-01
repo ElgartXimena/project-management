@@ -1,0 +1,13 @@
+<ng-container *ngIf="loading; else content">
+    <div class="loading-progress">
+        <mat-progress-bar mode="indeterminate" ></mat-progress-bar>
+      
+    </div>
+</ng-container>
+
+<ng-template #content>
+    <app-project-details [project]="project" ></app-project-details>
+    <app-add-item [formDialog]=formComponent></app-add-item>
+    <app-card-list [list]= "epics" [parentId]=parentItemId></app-card-list>
+</ng-template>
+

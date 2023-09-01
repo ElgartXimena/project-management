@@ -1,0 +1,19 @@
+<button matTooltip="Select icon" type="button" mat-fab extended color="accent" class="button-icon-select" [matMenuTriggerFor]="iconMenu">
+  <div class="icon-container">
+    <div  *ngIf="currentIcon !== ''">
+      <img src="../../../../../../../assets/emojis/icons8-{{currentIcon}}-48.png" alt="Icon" width="28" height="28">
+    </div>
+  <p>Icon</p>
+</div>
+</button>
+
+ <mat-menu #iconMenu="matMenu"  class="icon-menu">
+ <mat-grid-list cols="4" >
+    <mat-grid-tile *ngFor="let icon of availableIcons" >
+      <button mat-button type="button" (click)="selectIcon(icon)" class="icon">
+        <img src="../../../../../../../assets/emojis/icons8-{{icon}}-48.png" alt="Icon" width="28" height="28">
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</mat-menu>

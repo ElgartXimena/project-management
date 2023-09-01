@@ -1,0 +1,13 @@
+.project-list{
+    list-style:none;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .project-item {
+        width: 25rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+}
